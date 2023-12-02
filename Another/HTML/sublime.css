@@ -1,0 +1,17 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: black;
+}
+.main {
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.7)) ,url("role1.jfif");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	color: white;
+}
+

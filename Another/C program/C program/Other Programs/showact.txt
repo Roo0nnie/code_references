@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import javax.swing.JOptionPane;
+
+
+JOptionPane.showInputDialog();
+
+
+BufferedReader read = new BufferedReader(new ImputStreamReader(System.in))
+
+read() = read a single character in buffer of the reader
+readLine() = read a string 
+
+
+nextLine()
+
+String name[] = new String[12]
+
+name[][]
+name.lenght
+name[].lenght

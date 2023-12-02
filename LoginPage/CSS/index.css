@@ -1,0 +1,57 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Golos Text', sans-serif;
+}
+body {
+	background-image: url("E:/Practice HTML/LoginPage/Assets/cover.jpg");
+	background-position: center;
+	background-size: cover;
+}
+.container {
+	padding: 20px;
+	border: 1px solid black;
+	margin: 10% 450px;
+	background:#EEF5F1;
+	border: none;
+	border-radius: 10px;
+	max-height: 100vh;
+}
+.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.content p {
+	margin-top: 5px;
+	font-size: 15px;
+}
+.content h2 {
+	color: #1337C3;
+}
+form {
+	padding: 20px;
+}
+input {
+	border-radius: 5px;
+	width: 350px;
+	border: none;
+	padding: 10px;
+	margin: 10px;
+}
+#login {
+	color: white;
+	background: linear-gradient(to right, #54ABC5, #1337C3);
+	cursor: pointer;
+	margin: 2px;
+}
+span a {
+	color: #1337C3;
+	margin: 5px;
+	text-decoration: none;
+}
+label {
+	font-size: 13px;
+}

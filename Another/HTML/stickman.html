@@ -1,0 +1,33 @@
+<canvas id="myCanvas"></canvas>
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+
+  // Draw head
+  ctx.beginPath();
+  ctx.arc(100, 50, 20, 0, 2 * Math.PI);
+  ctx.stroke();
+
+  // Draw body
+  ctx.beginPath();
+  ctx.moveTo(100, 70);
+  ctx.lineTo(100, 120);
+  ctx.stroke();
+
+  // Draw arms
+  ctx.beginPath();
+  ctx.moveTo(70, 90);
+  ctx.lineTo(130, 90);
+  ctx.stroke();
+
+  // Draw legs
+  ctx.beginPath();
+  ctx.moveTo(100, 120);
+  ctx.lineTo(70, 150);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(100, 120);
+  ctx.lineTo(130, 150);
+  ctx.stroke();
+</script>

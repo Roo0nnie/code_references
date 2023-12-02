@@ -1,0 +1,66 @@
+.card-about {
+/*  width: 200px;*/
+/*  height: 250px;*/
+  background: #07182E;
+  border-radius: 5px;
+  text-align: center;
+  color: #f0f0f0;
+  overflow: hidden;
+  font-family: inherit;
+  z-index: 1;
+}
+
+.img-about{
+  display: flex;
+  margin: 40px auto 10px auto;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #f0f0f0;
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  z-index: 99;
+  background-color: #152f50;
+  overflow: hidden;
+  position: relative;
+}
+.img-about img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+
+}
+.icon-about {
+  opacity: 0;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  
+}
+.icon-about svg {
+  padding-inline: .5rem;
+}
+
+.heading-about {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+img {
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.card-about:hover .img-about {
+  transform: scale(1.1);
+  border: 1px solid #f0f0f0;
+}
+
+.card-about:hover h1,
+.card-about:hover .icon-about {
+  opacity: 1;
+}

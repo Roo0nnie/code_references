@@ -1,0 +1,5 @@
+01 Coke 100 10.0
+02 Sprite 100 10.0
+03 PopCola 100 10.5
+04 Royal 200 7.8
+05 Lucky 100 10.0

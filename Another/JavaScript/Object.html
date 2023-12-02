@@ -1,0 +1,39 @@
+<!--2/16/23
+	"iloveyou bi, always. As of now, 10:36 pm ako'y nakaharap sayo. Pinagmamasdan ang mala angel kong mahal na walang ginawa kundi mahalin ako. As of now, dyan ka sa harap ko nagareview kay may exam kayo bukas. Bi, payting. iloveyou so much." -- lab
+	
+	This - reference to the object that we're currently working with.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Object In Java</title>
+	<script type="text/javascript">
+		class Name{
+			constructor(firstName, lastName, Age, bday) {
+				this.firstName = firstName;
+				this.lastName = lastName;
+				this.Age = Age;
+				this.bday = bday;
+			}
+			iloveyou() {
+				console.log("iloveyou so muchhhh");
+			}
+			tyt() {
+				console.log("Rest na muna, iloveyou!");
+			}
+			callMyName() {
+				return this;
+			}
+		}
+		let Name1 = new Name("Roselyn", "Lionag", 20, "April");
+		let Name2 = new Name("Ronnie", "Estillero", 21, "September");
+
+		console.log(Name1.callMyName());
+	</script>
+</head>
+<body>
+
+</body>
+</html>

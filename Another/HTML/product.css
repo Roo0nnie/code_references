@@ -1,0 +1,51 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color:#3c2e22; 
+	box-sizing: border-box;
+}
+.table1 {
+	margin: 0;
+	padding: 1;
+	border-style: none;
+	background-image: url('Coffee.vivid_');
+	box-sizing: border-box;
+	height: 40px;
+	width: 100%;
+	cellpadding: 1;
+	color: white;
+	font-size: 25px;
+	display: flex;
+	align-items: center;
+}
+.text1 {
+    position:absolute;    
+    color:white;
+    left:50px;
+	top: 1px;
+    width:80%;
+	font-size: 60px;
+	font-family: Arial Black;
+}
+#img {
+	position:absolute; 
+	left:160px;
+	top: 200px;
+}
+.format {
+	border-style: none none none none;
+	position:absolute; 
+	left:500px;
+	top: 250px;
+	border
+}
+.TableBig {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		left: 300px;
+		top: 600px;
+		border: 1px;
+		border-style: solid;
+		celpadding: 10px;
+}

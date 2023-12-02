@@ -1,0 +1,7 @@
+public class NewClass{
+	
+	public report{
+		System.out.println("Helo");
+
+	} 
+}

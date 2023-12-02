@@ -1,0 +1,93 @@
+:root {
+    --main-black:#000;
+    --main-white:#fff;
+    --main-btn-operator: #00ACFF;
+    --main-btn-operator-hover: #86d5fc;
+    --main-btn-background:#242D3A;
+    --main-background-display:#121B22;
+    --main-special-btn:#928787;
+    --main-btn-special-hover: #5f5a5a;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background: linear-gradient(to top left, #17021b 0%, #1f1213 100%); */
+    font-family: 'Poppins', sans-serif;
+    text-align: centera;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 7px;
+    background-color: var(--main-background-display);
+}
+.display {
+    height: 50%;
+    width: 100%;
+    margin: 1rem 0;
+    background-color: var(--main-background-display);
+    color: var(--main-white);
+    text-align: right;
+    border: none;
+    padding: 2rem 0 0 0;
+}
+p.answer {
+    font-size: 2rem;
+    padding-right: .4rem;
+}
+.buttons {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 1rem 0;
+}
+.btn {
+    color: var(--main-white);
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--main-btn-background);
+    font-size: 1.2rem;
+    /* box-shadow: 3px 3px 4px rgb(0, 0, 0, .3); */
+    cursor: pointer;
+}
+.btn:nth-child(4), .btn:nth-child(8), .btn:nth-child(12), .btn:nth-child(16) {
+    background-color: var(--main-btn-operator);
+    color: var(--main-black);
+}
+.btn:nth-child(4):hover, .btn:nth-child(8):hover, .btn:nth-child(12):hover, .btn:nth-child(16):hover {
+    background-color: var(--main-btn-operator-hover);
+    color: var(--main-black);
+}
+.btn:hover {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+.btn:nth-child(1), .btn:nth-child(2) {
+    background-color: var(--main-special-btn);
+    color:var(--main-black);
+}
+#key-equal {
+    background-color: var(--main-special-btn);
+    color:var(--main-black);
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.btn:nth-child(1):hover, .btn:nth-child(2):hover, #key-equal:hover {
+    background-color: var(--main-btn-special-hover);
+    color:var(--main-white);
+}
