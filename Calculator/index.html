@@ -1,48 +1,84 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Calculator</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css" />
 </head>
+
 <body>
-    <main>
-        <div class="calculator">
-            <section class="display">
-                <p class="answer" id="answer">0</p>
-            </section>
-            <section class="buttons">
-                <button class="btn clear" data-action="clr">clr</button>
-                <button class="btn delete" data-action="del">Del</button>
-                <button class="btn decimal" data-action="decimal">.</button>
-                <button class="btn division" data-action="division">/</button>
+  <main>
+    <div class="calculator" name="calculator">
+      <section class="history">
+        <p id="history">0</p>
+      </section>
+      <section class="display">
+        <p class="answer" id="answer">0</p>
+      </section>
+      <section class="buttons">
+        <button class="btn clear" id="clr" onclick="clr()">C</button>
+        <button class="btn delete" id="del" onclick="del()">Del</button>
+        <button class="btn decimal" id="per" onclick="percent()" value="%">
+          %
+        </button>
+        <button class="btn division" id="div" onclick="getOperation('div')" value="/">
+          /
+        </button>
 
-                <button class="btn seven" id="num7">7</button>
-                <button class="btn eight" id="num8">8</button>
-                <button class="btn nine" id="num9">9</button>
-                <button class="btn minus key-operation" data-action="subtract">-</button>
+        <button class="btn seven" id="num7" onclick="getValue('num7')" value="7">
+          7
+        </button>
+        <button class="btn eight" id="num8" onclick="getValue('num8')" value="8">
+          8
+        </button>
+        <button class="btn nine" id="num9" onclick="getValue('num9')" value="9">
+          9
+        </button>
+        <button class="btn minus key-operation" id="sub" onclick="getOperation('sub')" value="-">
+          -
+        </button>
 
-                <button class="btn four" id="num4">4</button>
-                <button class="btn five" id="num5">5</button>
-                <button class="btn six" id="num6">6</button>
-                <button class="btn plus key-operation" data-action="add">+</button>
-                
-                <button class="btn one" id="num1" data-number="1">1</button>
-                <button class="btn two" id="num2">2</button>
-                <button class="btn three" id="num3">3</button>
-                <button class="btn multiplication key-operation" data-action="multiply">&times;</button>
+        <button class="btn four" id="num4" onclick="getValue('num4')" value="4">
+          4
+        </button>
+        <button class="btn five" id="num5" onclick="getValue('num5')" value="5">
+          5
+        </button>
+        <button class="btn six" id="num6" onclick="getValue('num6')" value="6">
+          6
+        </button>
+        <button class="btn plus key-operation" id="add" onclick="getOperation('add')" value="+">
+          +
+        </button>
 
-                <button class="btn hundred">00</button>
-                <button class="btn zero">0</button>
-                <button id="key-equal" class="btn" data-action="calculator">=</button>
-            </section>
-        </div>
-    </main>
+        <button class="btn one" id="num1" onclick="getValue('num1')" value="1">
+          1
+        </button>
+        <button class="btn two" id="num2" onclick="getValue('num2')" value="2">
+          2
+        </button>
+        <button class="btn three" id="num3" onclick="getValue('num3')" value="3">
+          3
+        </button>
+        <button class="btn multiplication key-operation" id="mul" onclick="getOperation('mul')" value="*">
+          *
+        </button>
+        <button class="btn dot" id="dot" onclick="dot()" value=".">
+          .
+        </button>
+        <button class="btn zero" id="zero" onclick="zero()" value="0">
+          0
+        </button>
+        <button id="key-equal" class="btn" id="equal" onclick="calculator()">
+          =
+        </button>
+      </section>
+    </div>
+  </main>
 </body>
-<script>
-    
-</script>
+<script src="./js/index.js"></script>
+
 </html>
