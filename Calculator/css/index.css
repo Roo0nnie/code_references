@@ -111,3 +111,8 @@ p.answer {
   background-color: var(--main-btn-background);
   color: var(--main-white);
 }
+.created {
+  color: var(--main-special-btn);
+  font-size: 12px;
+  font-weight: 700;
+}
