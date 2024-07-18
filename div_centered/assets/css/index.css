@@ -1,0 +1,50 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  height: 100vh;
+  border: 2px solid black;
+  margin: 2rem;
+}
+
+/* ================== Centering using flexbox ======================= */
+.centerFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centerGrid {
+  display: grid;
+  place-items: center;
+}
+
+.centerAbsolute {
+  position: relative;
+}
+.centerAbsoluteItem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centerMarginItem {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.inlineBlock {
+  text-align: center;
+  line-height: 100vh;
+}
+.centerBlockItem {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
